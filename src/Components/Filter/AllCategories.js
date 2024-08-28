@@ -6,7 +6,7 @@ const AllCategories = () => {
     <div className='categories'>
       
       {
-        ['ALL', 'SOCKS', 'MITTENS', 'SCARF', 'TOP'].map(category=> <Filter category={category}/>)
+        ['ALL', 'SOCKS', 'MITTENS', 'SCARF', 'TOP'].map((category, id) => <Filter key={id} category={category}/>)
       }
      
      

@@ -18,7 +18,7 @@ const Cart = () => {
 <div className='line'>
        <h3>ITEM(S) TOTAL: ${totalPrice}</h3>
      </div>
-     {cartItems.map(cartItem =><CartItem  cartItem={cartItem}/>)}
+     {cartItems.map((cartItem, id) =><CartItem  key={id} cartItem={cartItem}/>)}
      
     
      <button className='checkoutButton'>CHECKOUT</button>
